@@ -5,12 +5,13 @@ Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
 Summary(tr):	Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
 Name:		bin86
 Version:	0.4
-Release:	6
-Exclusivearch:	i386
+Release:	7
 Copyright:	distributable
 Group:		Development/Languages
 Group(pl):	Programowanie/Jêzyki
 Source:		ftp://sunsite.unc.edu/pub/Linux/GCC/%{name}-%{version}.tar.gz
+Patch0:		bin86-glibc.patch
+Patch1:		bin86-opt.patch
 Buildroot:	/tmp/%{name}-%{version}-root
 Exclusivearch:	i386
 
@@ -43,11 +44,13 @@ LILO ve çekirdeðin önyükleme kodlarý gibi gerçek kipte koþan programlar, bu
 pakete gereksinim duyarlar.
 
 %prep
-%setup -q
+%setup  -q
+%patch0 -p1
+%patch1 -p1
 
 %build
 export PATH=$PATH:.
-make
+make OPT="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
