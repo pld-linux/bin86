@@ -34,7 +34,7 @@ dont LILO et code de bootstrapping du noyau, ont besoin de ce package
 pour être reconstruits à partir des sources.
 
 %description -l pl
-PAkiet ten udostêpnia assembler i konsolidator (linker) trybu rzeczywistego
+Pakiet ten udostêpnia assembler i konsolidator (linker) trybu rzeczywistego
 procesorów rodziny 80x86. Pakiet ten trzeba mieæ do kompilacji programów, które
 pracuj± w trybie rzeczywistym jak LILO czy kod startowy kernela.
 
