@@ -4,11 +4,11 @@ Summary(fr):	Assembleur 80x86 en mode réel et éditeur de liens
 Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
 Summary(tr):	Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
 Name:		bin86
-Version:	0.16.1
+Version:	0.16.8
 Release:	1
 License:	GPL
 Group:		Development/Languages
-Source0:	http://www.cix.co.uk/~mayday/%{name}-%{version}.tar.gz
+Source0:	http://www.cix.co.uk/~mayday/dev86/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Exclusivearch:	%{ix86}
 Obsoletes:	dev86
@@ -55,14 +55,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install as/as86 ld/ld86 $RPM_BUILD_ROOT%{_bindir}
 install man/* $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-
+%doc README ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man*/*
