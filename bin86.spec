@@ -48,7 +48,7 @@ programlar, bu pakete gereksinim duyarlar.
 %setup -q -n %{name}
 
 %build
-%{__make} CFLAGS="%{rpmcflags}" LDFLAGS="%{?debug:-s}"
+%{__make} CFLAGS="%{rpmcflags}" LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
