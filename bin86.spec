@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 * Sat Aug 22 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.4-6]
 - added -q %setup parameter,
-- added %attr and %defattr macros in %files (allow build package from
+- added missing Buildroot field in header,
   non-root account).
 
 * Tue May 05 1998 Prospector System <bugs@redhat.com>
