@@ -13,9 +13,9 @@ Group:		Development/Languages
 Source0:	http://www.cix.co.uk/~mayday/dev86/%{name}-%{version}.tar.gz
 # Source0-md5:	5bc4e0106b57b2c5d1d6666a9bc6bbaa
 URL:		http://www.cix.co.uk/~mayday/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Exclusivearch:	%{ix86}
 Obsoletes:	dev86
+ExclusiveArch:	%{ix86}
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package provides an assembler and linker for real mode 80x86
