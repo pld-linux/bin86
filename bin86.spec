@@ -4,14 +4,12 @@ Summary(fr):	Assembleur 80x86 en mode réel et éditeur de liens
 Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
 Summary(tr):	Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
 Name:		bin86
-Version:	0.4
-Release:	8
-Copyright:	distributable
+Version:	0.15.1
+Release:	1
+License:	GPL
 Group:		Development/Languages
 Group(pl):	Programowanie/Jêzyki
-Source0:	ftp://sunsite.unc.edu/pub/Linux/GCC/%{name}-%{version}.tar.gz
-Patch0:		bin86-glibc.patch
-Patch1:		bin86-opt.patch
+Source0:	http://www.cix.co.uk/~mayday/bin86-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Exclusivearch:	%{ix86}
 
@@ -45,20 +43,18 @@ saðlar. LILO ve çekirdeðin önyükleme kodlarý gibi gerçek kipte koþan
 programlar, bu pakete gereksinim duyarlar.
 
 %prep
-%setup  -q
-%patch0 -p1
-%patch1 -p1
+%setup -q -n %{name}
 
 %build
-export PATH=$PATH:.
-%{__make} OPT="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-install -s as/as86 ld/ld86 $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install as/as86 ld/ld86 $RPM_BUILD_ROOT%{_bindir}
+install man/* $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf README
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -68,3 +64,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.gz
 
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man*/*.gz
