@@ -12,6 +12,7 @@ Group(pl):	Programowanie/Jêzyki
 Source0:	http://www.cix.co.uk/~mayday/bin86-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Exclusivearch:	%{ix86}
+Obsoletes:	dev86
 
 %description
 This package provides an assembler and linker for real mode 80x86
