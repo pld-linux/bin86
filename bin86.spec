@@ -12,7 +12,7 @@ Group(pl):	Programowanie/Jêzyki
 Source:		ftp://sunsite.unc.edu/pub/Linux/GCC/%{name}-%{version}.tar.gz
 Patch0:		bin86-glibc.patch
 Patch1:		bin86-opt.patch
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Exclusivearch:	%{ix86}
 
 %description
