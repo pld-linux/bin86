@@ -33,7 +33,7 @@ instructions du mode réel 80x86. Les programmes tournat en mode réel
 dont LILO et code de bootstrapping du noyau, ont besoin de ce package
 pour être reconstruits à partir des sources.
 
-%description
+%description -l pl
 PAkiet ten udostêpnia assembler i konsolidator (linker) trybu rzeczywistego
 procesorów rodziny 80x86. Pakiet ten trzeba mieæ do kompilacji programów, które
 pracuj± w trybie rzeczywistym jak LILO czy kod startowy kernela.
