@@ -4,7 +4,7 @@ Summary(fr):	Assembleur 80x86 en mode réel et éditeur de liens
 Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
 Summary(tr):	Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
 Name:		bin86
-Version:	0.15.3
+Version:	0.15.4
 Release:	1
 License:	GPL
 Group:		Development/Languages
