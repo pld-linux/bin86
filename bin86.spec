@@ -5,7 +5,7 @@ Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
 Summary(tr):	Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
 Name:		bin86
 Version:	0.4
-Release:	7
+Release:	8
 Copyright:	distributable
 Group:		Development/Languages
 Group(pl):	Programowanie/Jêzyki
@@ -13,7 +13,7 @@ Source:		ftp://sunsite.unc.edu/pub/Linux/GCC/%{name}-%{version}.tar.gz
 Patch0:		bin86-glibc.patch
 Patch1:		bin86-opt.patch
 Buildroot:	/tmp/%{name}-%{version}-root
-Exclusivearch:	i386
+Exclusivearch:	i386 i486 i586 i686
 
 %description
 This package provides an assembler and linker for real mode 80x86
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.gz
+
 %attr(755,root,root) %{_bindir}/*
 
 %changelog
@@ -75,22 +76,8 @@ rm -rf $RPM_BUILD_ROOT
   [0.4-6]
 - added -q %setup parameter,
 - added missing Buildroot field in header,
-  non-root account).
-
-* Tue May 05 1998 Prospector System <bugs@redhat.com>
-- translations modified for de, fr, tr
-
-* Thu Apr 30 1998 Cristian Gafton <gafton@redhat.com>
-- use ExclusiveArch instead of Exclusive
-
-* Sun Oct 19 1997 Erik Troan <ewt@redhat.com>
-- minor spec file cleanups
-- build rooted
-- usees %attr() now
-
-* Tue Jul 08 1997 Erik Troan <ewt@redhat.com>
-- built against glibc
-
+- added using %%{name} and %%{version} in Source,
+- start at RH spec.
 - added %attr and %defattr macros in %files (allows build package from
   non-root account),
 - start at RH spec.
