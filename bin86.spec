@@ -45,7 +45,7 @@ pakete gereksinim duyarlar.
 
 %build
 export PATH=$PATH:.
-make CFLAGS="$RPM_OPT_FLAGS -D_POSIX_SOURCE"
+make
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -67,7 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 * Sat Aug 22 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.4-6]
 - added -q %setup parameter,
-- added using $RPM_OPT_FLAGS during building package,
 - added %attr and %defattr macros in %files (allow build package from
   non-root account).
 
