@@ -6,12 +6,13 @@ Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
 Summary(pt_BR):	Assembler e Linker para modo real 80x86
 Summary(tr):	Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
 Name:		bin86
-Version:	0.16.15
+Version:	0.16.16
 Release:	1
 License:	GPL
 Group:		Development/Languages
+#Source0Download: http://www.cix.co.uk/~mayday/
 Source0:	http://www.cix.co.uk/~mayday/dev86/%{name}-%{version}.tar.gz
-# Source0-md5:	f56cc3d6abcad2b4a130d524bd6b76cb
+# Source0-md5:	48c56be9792b26702805cb59471c99e5
 URL:		http://www.cix.co.uk/~mayday/
 Obsoletes:	dev86
 ExclusiveArch:	%{ix86}
