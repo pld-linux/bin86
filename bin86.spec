@@ -45,7 +45,7 @@ pakete gereksinim duyarlar.
 
 %build
 export PATH=$PATH:.
-make CFLAGS=$RPM_OPT_FLAGS
+make CFLAGS="$RPM_OPT_FLAGS -D_POSIX_SOURCE"
 
 %install
 rm -rf $RPM_BUILD_ROOT
