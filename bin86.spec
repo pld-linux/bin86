@@ -51,7 +51,7 @@ programlar, bu pakete gereksinim duyarlar.
 
 %build
 export PATH=$PATH:.
-make OPT="$RPM_OPT_FLAGS"
+%{__make} OPT="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
