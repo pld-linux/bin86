@@ -67,16 +67,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.gz
 
 %attr(755,root,root) %{_bindir}/*
-
-%changelog
-
-- added using CVS keywords in %changelog (for automating them).
-
-* Sat Aug 22 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.4-6]
-- added -q %setup parameter,
-- added missing Buildroot field in header,
-- added using %%{name} and %%{version} in Source,
-- start at RH spec.- added %attr and %defattr macros in %files (allows build package from
-  non-root account),
-- start at RH spec.
