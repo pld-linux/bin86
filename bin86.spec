@@ -45,7 +45,7 @@ saðlar. LILO ve çekirdeðin önyükleme kodlarý gibi gerçek kipte koþan
 programlar, bu pakete gereksinim duyarlar.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 %{__make} CFLAGS="%{rpmcflags}" LDFLAGS="%{rpmldflags}"
