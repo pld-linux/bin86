@@ -9,6 +9,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.cix.co.uk/~mayday/dev86/%{name}-%{version}.tar.gz
+URL:		http://www.cix.co.uk/~mayday/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Exclusivearch:	%{ix86}
 Obsoletes:	dev86
