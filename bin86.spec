@@ -1,16 +1,18 @@
-Summary:     Real mode 80x86 assembler and linker
-Summary(de): Real-Mode 80x86 Assembler und Linker
-Summary(fr): Assembleur 80x86 en mode réel et éditeur de liens
-Summary(pl): Assembler i konsolidator trybu rzeczywistego procesorów 80x86
-Summary(tr): Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
-Name:        bin86
-Version:     0.4
-Release:     6
-Exclusivearch: i386
-Copyright:   distributable
-Group:       Development/Languages
-Source:      ftp://sunsite.unc.edu/pub/Linux/GCC/%{name}-%{version}.tar.gz
-Buildroot:   /tmp/%{name}-%{version}-root
+Summary:	Real mode 80x86 assembler and linker
+Summary(de):	Real-Mode 80x86 Assembler und Linker
+Summary(fr):	Assembleur 80x86 en mode réel et éditeur de liens
+Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
+Summary(tr):	Gerçek kip 80x86 çeviricisi ve baðlayýcýsý
+Name:		bin86
+Version:	0.4
+Release:	6
+Exclusivearch:	i386
+Copyright:	distributable
+Group:		Development/Languages
+Group(pl):	Programowanie/Jêzyki
+Source:		ftp://sunsite.unc.edu/pub/Linux/GCC/%{name}-%{version}.tar.gz
+Buildroot:	/tmp/%{name}-%{version}-root
+Exclusivearch:	i386
 
 %description
 This package provides an assembler and linker for real mode 80x86
@@ -52,12 +54,14 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/bin
 install -s as/as86 ld/ld86 $RPM_BUILD_ROOT/usr/bin
 
+gzip -9nf README
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
-%doc README
+%defattr(644,root,root,755)
+%doc README.gz
 %attr(755,root,root) /usr/bin/*
 
 %changelog
@@ -82,6 +86,8 @@ rm -rf $RPM_BUILD_ROOT
 - usees %attr() now
 
 * Tue Jul 08 1997 Erik Troan <ewt@redhat.com>
-- built against glibc- added %attr and %defattr macros in %files (allows build package from
+- built against glibc
+
+- added %attr and %defattr macros in %files (allows build package from
   non-root account),
 - start at RH spec.
