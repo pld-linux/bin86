@@ -13,7 +13,7 @@ Source:		ftp://sunsite.unc.edu/pub/Linux/GCC/%{name}-%{version}.tar.gz
 Patch0:		bin86-glibc.patch
 Patch1:		bin86-opt.patch
 Buildroot:	/tmp/%{name}-%{version}-root
-Exclusivearch:	i386 i486 i586 i686
+Exclusivearch:	%{ix86}
 
 %description
 This package provides an assembler and linker for real mode 80x86
@@ -77,7 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 - added -q %setup parameter,
 - added missing Buildroot field in header,
 - added using %%{name} and %%{version} in Source,
-- start at RH spec.
-- added %attr and %defattr macros in %files (allows build package from
+- start at RH spec.- added %attr and %defattr macros in %files (allows build package from
   non-root account),
 - start at RH spec.
