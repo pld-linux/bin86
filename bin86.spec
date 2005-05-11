@@ -15,7 +15,7 @@ Source0:	http://www.cix.co.uk/~mayday/dev86/%{name}-%{version}.tar.gz
 # Source0-md5:	48c56be9792b26702805cb59471c99e5
 URL:		http://www.cix.co.uk/~mayday/
 Obsoletes:	dev86
-ExclusiveArch:	%{ix86} amd64
+ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
