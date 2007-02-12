@@ -1,10 +1,10 @@
 Summary:	Real mode 80x86 assembler and linker
-Summary(de):	Real-Mode 80x86 Assembler und Linker
-Summary(es):	Assembler y Linker para modo real 80x86
-Summary(fr):	Assembleur 80x86 en mode réel et éditeur de liens
-Summary(pl):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
-Summary(pt_BR):	Assembler e Linker para modo real 80x86
-Summary(tr):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
+Summary(de.UTF-8):   Real-Mode 80x86 Assembler und Linker
+Summary(es.UTF-8):   Assembler y Linker para modo real 80x86
+Summary(fr.UTF-8):   Assembleur 80x86 en mode rÃ©el et Ã©diteur de liens
+Summary(pl.UTF-8):   Assembler i konsolidator trybu rzeczywistego procesorÃ³w 80x86
+Summary(pt_BR.UTF-8):   Assembler e Linker para modo real 80x86
+Summary(tr.UTF-8):   GerÃ§ek kip 80x86 Ã§eviricisi ve baÄŸlayÄ±cÄ±sÄ±
 Name:		bin86
 Version:	0.16.17
 Release:	2
@@ -24,39 +24,39 @@ instructions. Programs that run in real mode, including LILO and the
 kernel's bootstrapping code, need to have this package installed to be
 built from the sources.
 
-%description -l de
-Dieses Paket enthält einen Assembler und Linker für Real-Mode 80x86-
-Instruktione. Für Programme, die in Real-Mode laufen, einschließlich
-LILO und der Bootstrapping-Code des Kernels, muß dieses Paket
-installiert sein, damit sie von den Quellen gebaut werden können.
+%description -l de.UTF-8
+Dieses Paket enthÃ¤lt einen Assembler und Linker fÃ¼r Real-Mode 80x86-
+Instruktione. FÃ¼r Programme, die in Real-Mode laufen, einschlieÃŸlich
+LILO und der Bootstrapping-Code des Kernels, muÃŸ dieses Paket
+installiert sein, damit sie von den Quellen gebaut werden kÃ¶nnen.
 
-%description -l es
+%description -l es.UTF-8
 Este paquete provee un assembler y un linker para instrucciones 80x86
 modo real. Los programas que se ejecutan en modo real, incluyendo LILO
-y el código de boot del kernel, necesitan tener este paquete instalado
+y el cÃ³digo de boot del kernel, necesitan tener este paquete instalado
 para que se construyan los fuentes.
 
-%description -l fr
-Ce package fournit un assembleur et un éditeur de liens pour les
-instructions du mode réel 80x86. Les programmes tournat en mode réel
+%description -l fr.UTF-8
+Ce package fournit un assembleur et un Ã©diteur de liens pour les
+instructions du mode rÃ©el 80x86. Les programmes tournat en mode rÃ©el
 dont LILO et code de bootstrapping du noyau, ont besoin de ce package
-pour être reconstruits à partir des sources.
+pour Ãªtre reconstruits Ã  partir des sources.
 
-%description -l pl
-Pakiet ten udostêpnia assembler i konsolidator (linker) trybu
-rzeczywistego procesorów rodziny 80x86. Pakiet ten trzeba mieæ do
-kompilacji programów, które pracuj± w trybie rzeczywistym jak LILO czy
+%description -l pl.UTF-8
+Pakiet ten udostÄ™pnia assembler i konsolidator (linker) trybu
+rzeczywistego procesorÃ³w rodziny 80x86. Pakiet ten trzeba mieÄ‡ do
+kompilacji programÃ³w, ktÃ³re pracujÄ… w trybie rzeczywistym jak LILO czy
 kod startowy kernela.
 
-%description -l pt_BR
-Este pacote provê um assembler e um linker para instruções 80x86 modo
-real. Programas que rodam em modo real, incluindo LILO e o código de
+%description -l pt_BR.UTF-8
+Este pacote provÃª um assembler e um linker para instruÃ§Ãµes 80x86 modo
+real. Programas que rodam em modo real, incluindo LILO e o cÃ³digo de
 boot do kernel, necessitam ter este pacote instalado para serem
-construídos dos fontes.
+construÃ­dos dos fontes.
 
-%description -l tr
-Bu paket, gerçek kip 80x86 yönergeleri için bir çevirici ve bağlayıcı
-sağlar. LILO ve çekirdeğin önyükleme kodları gibi gerçek kipte koşan
+%description -l tr.UTF-8
+Bu paket, gerÃ§ek kip 80x86 yÃ¶nergeleri iÃ§in bir Ã§evirici ve baÄŸlayÄ±cÄ±
+saÄŸlar. LILO ve Ã§ekirdeÄŸin Ã¶nyÃ¼kleme kodlarÄ± gibi gerÃ§ek kipte koÅŸan
 programlar, bu pakete gereksinim duyarlar.
 
 %prep
