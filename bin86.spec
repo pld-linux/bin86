@@ -1,10 +1,10 @@
 Summary:	Real mode 80x86 assembler and linker
-Summary(de.UTF-8):   Real-Mode 80x86 Assembler und Linker
-Summary(es.UTF-8):   Assembler y Linker para modo real 80x86
-Summary(fr.UTF-8):   Assembleur 80x86 en mode réel et éditeur de liens
-Summary(pl.UTF-8):   Assembler i konsolidator trybu rzeczywistego procesorów 80x86
-Summary(pt_BR.UTF-8):   Assembler e Linker para modo real 80x86
-Summary(tr.UTF-8):   Gerçek kip 80x86 çeviricisi ve bağlayıcısı
+Summary(de.UTF-8):	Real-Mode 80x86 Assembler und Linker
+Summary(es.UTF-8):	Assembler y Linker para modo real 80x86
+Summary(fr.UTF-8):	Assembleur 80x86 en mode réel et éditeur de liens
+Summary(pl.UTF-8):	Assembler i konsolidator trybu rzeczywistego procesorów 80x86
+Summary(pt_BR.UTF-8):	Assembler e Linker para modo real 80x86
+Summary(tr.UTF-8):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
 Name:		bin86
 Version:	0.16.17
 Release:	2
