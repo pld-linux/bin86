@@ -7,7 +7,7 @@ Summary(pt_BR.UTF-8):	Assembler e Linker para modo real 80x86
 Summary(tr.UTF-8):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
 Name:		bin86
 Version:	0.16.17
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages
 #Source0Download: http://www.cix.co.uk/~mayday/
