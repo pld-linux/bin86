@@ -6,14 +6,13 @@ Summary(pl.UTF-8):	Assembler i konsolidator trybu rzeczywistego procesorów 80x8
 Summary(pt_BR.UTF-8):	Assembler e Linker para modo real 80x86
 Summary(tr.UTF-8):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
 Name:		bin86
-Version:	0.16.17
-Release:	3
+Version:	0.16.18
+Release:	1
 License:	GPL
 Group:		Development/Languages
-#Source0Download: http://www.cix.co.uk/~mayday/
-Source0:	http://www.cix.co.uk/~mayday/dev86/%{name}-%{version}.tar.gz
-# Source0-md5:	c9e8d72dd2e7457b52d0e3164fc199a1
-URL:		http://www.cix.co.uk/~mayday/
+Source0:	http://www.debath.co.uk/dev86/%{name}-%{version}.tar.gz
+# Source0-md5:	914068fb649b93642d1cf21857b75699
+URL:		http://www.debath.co.uk/
 Obsoletes:	dev86
 ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -81,5 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man*/*
+%attr(755,root,root) %{_bindir}/as86
+%attr(755,root,root) %{_bindir}/ld86
+%{_mandir}/man1/as86.1*
+%{_mandir}/man1/ld86.1*
