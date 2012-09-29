@@ -7,11 +7,12 @@ Summary(pt_BR.UTF-8):	Assembler e Linker para modo real 80x86
 Summary(tr.UTF-8):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
 Name:		bin86
 Version:	0.16.18
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.debath.co.uk/dev86/%{name}-%{version}.tar.gz
 # Source0-md5:	914068fb649b93642d1cf21857b75699
+Patch0:		%{name}-x64.patch
 URL:		http://www.debath.co.uk/
 Obsoletes:	dev86
 ExclusiveArch:	%{ix86} %{x8664}
@@ -60,6 +61,9 @@ programlar, bu pakete gereksinim duyarlar.
 
 %prep
 %setup -q
+%ifarch %{x8664}
+%patch0 -p1
+%endif
 
 %build
 %{__make} \
