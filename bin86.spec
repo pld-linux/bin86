@@ -6,12 +6,12 @@ Summary(pl.UTF-8):	Assembler i konsolidator trybu rzeczywistego procesorów 80x8
 Summary(pt_BR.UTF-8):	Assembler e Linker para modo real 80x86
 Summary(tr.UTF-8):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
 Name:		bin86
-Version:	0.16.18
-Release:	2
+Version:	0.16.19
+Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.debath.co.uk/dev86/%{name}-%{version}.tar.gz
-# Source0-md5:	914068fb649b93642d1cf21857b75699
+# Source0-md5:	0a20d79765a6855ce7c8c2d02b23a0f0
 Patch0:		%{name}-x64.patch
 URL:		http://www.debath.co.uk/
 Obsoletes:	dev86
