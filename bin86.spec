@@ -6,14 +6,14 @@ Summary(pl.UTF-8):	Assembler i konsolidator trybu rzeczywistego procesorów 80x8
 Summary(pt_BR.UTF-8):	Assembler e Linker para modo real 80x86
 Summary(tr.UTF-8):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
 Name:		bin86
-Version:	0.16.19
+Version:	0.16.21
 Release:	1
 License:	GPL
 Group:		Development/Languages
-Source0:	http://www.debath.co.uk/dev86/%{name}-%{version}.tar.gz
-# Source0-md5:	0a20d79765a6855ce7c8c2d02b23a0f0
+Source0:	http://v3.sk/~lkundrak/dev86/%{name}-%{version}.tar.gz
+# Source0-md5:	a94f57453500700cebfea86d7d217481
 Patch0:		%{name}-x64.patch
-URL:		http://www.debath.co.uk/
+URL:		http://v3.sk/~lkundrak/dev86/
 Obsoletes:	dev86
 ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -75,8 +75,8 @@ programlar, bu pakete gereksinim duyarlar.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install as/as86 ld/ld86 $RPM_BUILD_ROOT%{_bindir}
-install man/* $RPM_BUILD_ROOT%{_mandir}/man1
+install -p as/as86 ld/ld86 $RPM_BUILD_ROOT%{_bindir}
+cp -p man/* $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
