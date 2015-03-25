@@ -7,7 +7,7 @@ Summary(pt_BR.UTF-8):	Assembler e Linker para modo real 80x86
 Summary(tr.UTF-8):	Gerçek kip 80x86 çeviricisi ve bağlayıcısı
 Name:		bin86
 Version:	0.16.21
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://v3.sk/~lkundrak/dev86/%{name}-%{version}.tar.gz
@@ -15,7 +15,7 @@ Source0:	http://v3.sk/~lkundrak/dev86/%{name}-%{version}.tar.gz
 Patch0:		%{name}-x64.patch
 URL:		http://v3.sk/~lkundrak/dev86/
 Obsoletes:	dev86
-ExclusiveArch:	%{ix86} %{x8664}
+ExclusiveArch:	%{ix86} %{x8664} x32
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -61,7 +61,7 @@ programlar, bu pakete gereksinim duyarlar.
 
 %prep
 %setup -q
-%ifarch %{x8664}
+%ifarch %{x8664} x32
 %patch0 -p1
 %endif
 
