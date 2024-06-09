@@ -1,8 +1,8 @@
-diff -ur bin86-0.16.18.orig/ld/x86_aout.h bin86-0.16.18/ld/x86_aout.h
---- bin86-0.16.18.orig/ld/x86_aout.h	2003-01-28 22:17:14.000000000 +0000
-+++ bin86-0.16.18/ld/x86_aout.h	2012-09-29 14:00:55.188509488 +0000
-@@ -13,7 +13,9 @@
- typedef long Long;
+diff -urNp -x '*.orig' bin86-0.16.21.org/ld/x86_aout.h bin86-0.16.21/ld/x86_aout.h
+--- bin86-0.16.21.org/ld/x86_aout.h	2013-10-29 16:44:51.000000000 +0100
++++ bin86-0.16.21/ld/x86_aout.h	2024-06-09 15:14:00.075072680 +0200
+@@ -19,7 +19,9 @@ typedef long Long;
+ typedef int32_t Long;
  #define __OUT_OK 1
  #else
 -typedef char Long[4];
@@ -10,5 +10,5 @@ diff -ur bin86-0.16.18.orig/ld/x86_aout.h bin86-0.16.18/ld/x86_aout.h
 +#include <sys/types.h>
 +typedef int32_t Long;
  #endif
+ #endif
  
- struct	exec {			/* a.out header */
