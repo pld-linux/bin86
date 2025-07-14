@@ -62,7 +62,7 @@ programlar, bu pakete gereksinim duyarlar.
 %prep
 %setup -q
 %ifarch %{x8664} x32
-%patch0 -p1
+%patch -P0 -p1
 %endif
 
 %build
